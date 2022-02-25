@@ -1,0 +1,120 @@
+#aem-app {
+    min-height: 100vh
+}
+
+#aem-app section {
+    position: relative;
+    width: 100%;
+    /* overflow: hidden */
+}
+
+#aem-app .section-content {
+    text-align: center;
+    width: 100%;
+
+    margin: 0 auto
+    
+}
+ul,li{
+    list-style: none;
+}
+.se-img{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+.se-img img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 0;
+}
+.se-img .img1{
+    position: relative;
+    transform: translateY(0);
+}
+.se-img .img2{
+    transform: translateY(100%);
+}
+.se-img .img3{
+    transform: translateY(100%);
+}
+.se-img .active{
+    position: relative;
+    z-index: 2;
+    left: 0;
+    top: 0;
+    display: block;
+    width: 100%;
+}
+
+#pinContainer {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    -webkit-perspective: 1000;
+            perspective: 1000;
+            
+}
+#slideContainer {
+    width: 400%; /* to contain 4 panels, each with 100% of window width */
+    height: 100%;
+}
+.panel {
+    height: 100%;
+    width: 25%; /* relative to parent -> 25% of 400% = 100% of window width */
+    float: left;
+    position: relative;
+}
+.panel img{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+.panel b{
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    z-index: 3;
+    transform: translateY(-50%);
+}
+.blue{
+    background-color: blue;
+}
+.turqoise{
+    background-color: red;
+}
+.green{
+    background-color: green;
+}
+.bordeaux{
+    background-color: black;
+}
+
+.box-active{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+.bx{
+   width: 100%;
+   height: 100vh;
+   display: block;
+   position: absolute;
+   left: 0;
+   top: 0;
+   z-index: 1;
+}
+.active{
+    position: relative;
+    z-index: 2;
+}
